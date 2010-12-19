@@ -2,13 +2,15 @@
 
 /**
  * FlyWithRocket.php
- * 
+ *
  * Implements a behaviour
  * @author Indika Piyasena <indika@webmolecule.co.za>
  * @version 1.0
  */
 
-public class FlyWithRocket implements IFlyBehaviour
+require_once 'IFlyBehaviour.php';
+
+class FlyWithRocket implements IFlyBehaviour
 {
 
 	function fly()

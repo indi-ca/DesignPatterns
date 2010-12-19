@@ -1,12 +1,22 @@
 <?php
  /**
- * filename.php
+ * RubberDuck.php
  * 
- * Description of class
+ * A implementation of Duck
  * @author Indika Piyasena <indika@webmolecule.co.za>
  * @version 1.0
  */
+
+require_once 'Duck.php';
  
-class RubberDuck {
+class RubberDuck extends Duck {
+
+	/**
+     * Constructor
+     */
+    public function __construct()
+    {
+	    print "RubberDuck: constructing\n";
+    }
 
 }

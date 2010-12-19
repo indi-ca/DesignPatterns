@@ -1,12 +1,25 @@
 <?php
  /**
- * filename.php
+ * Duck.php
  * 
- * Description of class
+ * An abstract Duck
  * @author Indika Piyasena <indika@webmolecule.co.za>
  * @version 1.0
  */
  
-class Duck {
+abstract class Duck {
+
+	protected $flyBehaviour;
+
+	public function setFlyBehaviour($flyBehaviour)
+	{
+		$this->flyBehaviour = $flyBehaviour;
+	}
+
+	public function performFly()
+	{
+		$this->flyBehaviour->fly();
+	}
+
 
 }
