@@ -1,5 +1,6 @@
 using System;
-namespace Strategy.Behaivours
+
+namespace Patterns.Strategy.Behaivours
 {
 	public interface IFlyBehaviour
 	{

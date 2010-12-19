@@ -1,5 +1,6 @@
 using System;
-namespace Strategy.Ducks
+
+namespace Patterns.Strategy.Ducks
 {
 	public class RubberDuck : Duck
 	{

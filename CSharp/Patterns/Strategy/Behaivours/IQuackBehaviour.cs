@@ -1,9 +1,10 @@
 using System;
-namespace Strategy.Behaivours
+
+namespace Patterns.Strategy.Behaivours
 {
 	public interface IQuackBehaviour
 	{
-		void performQuack();
+		void quack();
 	}
 }
 

@@ -1,8 +1,8 @@
 using System;
-using Strategy;
-using Strategy.Behaivours;
+using Patterns.Strategy;
+using Patterns.Strategy.Behaivours;
 
-namespace Strategy.Ducks
+namespace Patterns.Strategy.Ducks
 {
 	public abstract class Duck
 	{
@@ -18,9 +18,19 @@ namespace Strategy.Ducks
 			flybehaviour = behaviour;
 		}
 		
+		public void setQuackBehaivour(IQuackBehaviour behaivour)
+		{
+			quackbehavior = behaivour;
+		}
+		
 		public void performFly()
 		{
 			flybehaviour.fly();
+		}
+		
+		public void performQuack()
+		{
+			quackbehavior.quack();
 		}
 	}
 }
