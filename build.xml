@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="designpatterns" basedir=".">
+<project name="design_patterns" basedir=".">
 
-  <target name="checkout">
-    <exec executable="git" dir="${basedir}">
-      <arg line="pull"/>
-    </exec>
-  </target>
-
-
-
-  <target name="clean">
-
-  </target>
+	<target name="checkout">
+		<exec executable="git" dir="${basedir}">
+			<arg line="pull"/>
+		</exec>
+	</target>
 
 
+	<target name="clean">
 
-  <target name="build" depends="checkout, clean"/>
+	</target>
+
+	<target name="php_test">
+		<exec executable="phpunit" dir="${basedir}/PHP" failonerror="on">
+		  <arg line="StrategyClientTest.php"/>
+		</exec>
+
+	</target>
+
+	<target name="test" depends="php_test">
+
+	</target>
+
+
+	<target name="build" depends="checkout, clean, test"/>
 
 
 </project>
