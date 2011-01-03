@@ -2,8 +2,8 @@
  /**
  * filename.php
  * 
- * Description of class
- * @author Indika Piyasena <indika@webmolecule.co.za>
+ * Tests the Strategy pattern
+ * @author Indika Piyasena
  * @version 1.0
  */
 
@@ -16,7 +16,13 @@ class StrategyClient {
 	{
 		$rubberDuck = new RubberDuck();
 	    $flyWithRocket = new FlyWithRocket();
-	    $rubberDuck->setFlyBehaviour($flyWithRocket);
+
+	    $success = $rubberDuck->setFlyBehaviour($flyWithRocket);
+	    if (!$success)
+	    {
+		    throw new Exception("The provided strategy does not implement the interface");
+	    }
+
 	    $rubberDuck->performFly();
 	}
 }

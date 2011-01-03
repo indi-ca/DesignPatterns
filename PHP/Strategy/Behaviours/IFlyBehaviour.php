@@ -1,15 +1,20 @@
 <?php
 
-/**
- * Created by JetBrains PhpStorm.
- * User: indika
- * Date: 19/12/10
- * Time: 5:57 PM
- * To change this template use File | Settings | File Templates.
+ /**
+ * IFlyBehaviour.php
+ *
+ * The interface to a strategy
+ * @author Indika Piyasena
+ * @version 1.0
  */
 
 interface IFlyBehaviour {
 
+	/**
+	 * A way of flying
+	 * @abstract
+	 * @return void
+	 */
 	function fly();
 
 }

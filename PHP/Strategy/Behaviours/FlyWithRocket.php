@@ -3,8 +3,8 @@
 /**
  * FlyWithRocket.php
  *
- * Implements a behaviour
- * @author Indika Piyasena <indika@webmolecule.co.za>
+ * Implements a strategy
+ * @author Indika Piyasena
  * @version 1.0
  */
 
@@ -13,6 +13,10 @@ require_once 'IFlyBehaviour.php';
 class FlyWithRocket implements IFlyBehaviour
 {
 
+	/**
+	 * A way of flying
+	 * @return void
+	 */
 	function fly()
 	{
 		Print "Flying with a rocket\n";

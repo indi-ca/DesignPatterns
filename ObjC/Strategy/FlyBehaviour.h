@@ -1,7 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@protocol FlyBehaviour
 
-NSString* Fly;
+@protocol FlyBehaviour <NSObject>
+
+- (void) fly;
 
 @end
