@@ -1,0 +1,40 @@
+This repository has just begun.
+
+
+Interesting patterns
+    Creational
+        Singleton
+        Factory
+
+    Structural
+
+    Behavioural
+
+
+
+TODO
+    The root directory should have the patterns
+
+    Perhaps each pattern dir should have it's only build file
+
+    Under each pattern directory,
+    should be the different language implementations.
+
+    I'll need a workspace for every language.
+
+READ
+    https://github.com/adomokos/DesignPatterns-Ruby
+
+    https://github.com/tcorral/Design-Patterns-in-Javascript
+        Up to date
+
+
+    https://github.com/toneyrr/Obj-C-Design-Patterns
+        20 years of experience apparently
+
+So,
+    create a workspace all patterns
+
+    then one for mine
+
+    and then one for the others
